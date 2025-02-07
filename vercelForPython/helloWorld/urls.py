@@ -1,7 +1,7 @@
-from vercelForPython.helloWorld import views
+from . import views
 from django.urls import path
 
-app_name = "hello"
+app_name = "helloWorld"
 
 urlpatterns = [
     path("", views.hello_world, name="hello"),
